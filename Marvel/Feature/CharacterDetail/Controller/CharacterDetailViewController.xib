@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CharacterDetailViewController" customModule="MarvelApp" customModuleProvider="target">
+            <connections>
+                <outlet property="characterDetailNameLabel" destination="Kap-ie-Iqq" id="gnn-vy-GEa"/>
+                <outlet property="characterDetailView" destination="sfd-xD-Y2r" id="WU1-dX-ItG"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pl7-Nd-qHK">
+                    <rect key="frame" x="20" y="64" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="6Yy-Wk-LWQ"/>
+                        <constraint firstAttribute="width" constant="40" id="ngs-0K-C8m"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal">
+                        <imageReference key="image" image="chevron.backward" catalog="system" symbolScale="large"/>
+                    </state>
+                    <connections>
+                        <action selector="dismissBack:" destination="-1" eventType="touchUpInside" id="KQT-nQ-y1a"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_NOMBRE" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kap-ie-Iqq">
+                    <rect key="frame" x="70" y="73.5" width="274" height="21.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sfd-xD-Y2r">
+                    <rect key="frame" x="0.0" y="115" width="414" height="781"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Pl7-Nd-qHK" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="TAH-B8-TqJ"/>
+                <constraint firstItem="sfd-xD-Y2r" firstAttribute="top" secondItem="Kap-ie-Iqq" secondAttribute="bottom" constant="20" id="cDH-Hg-uwY"/>
+                <constraint firstItem="Pl7-Nd-qHK" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="fmT-FY-94t"/>
+                <constraint firstAttribute="bottom" secondItem="sfd-xD-Y2r" secondAttribute="bottom" id="gNn-lt-7FO"/>
+                <constraint firstItem="Kap-ie-Iqq" firstAttribute="centerY" secondItem="Pl7-Nd-qHK" secondAttribute="centerY" id="jWr-KK-3k3"/>
+                <constraint firstAttribute="trailing" secondItem="sfd-xD-Y2r" secondAttribute="trailing" id="pys-KB-eMv"/>
+                <constraint firstItem="Kap-ie-Iqq" firstAttribute="leading" secondItem="Pl7-Nd-qHK" secondAttribute="trailing" constant="10" id="ueb-6u-qE5"/>
+                <constraint firstItem="sfd-xD-Y2r" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="z1s-8O-vHV"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Kap-ie-Iqq" secondAttribute="trailing" constant="70" id="ziO-eU-LR9"/>
+            </constraints>
+            <point key="canvasLocation" x="141" y="95"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="chevron.backward" catalog="system" width="96" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

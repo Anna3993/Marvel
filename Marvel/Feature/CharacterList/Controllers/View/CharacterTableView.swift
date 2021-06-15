@@ -104,7 +104,10 @@ extension CharacterTableView: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if Utils.isConnectedToNetwork() {
-            // TODO: Detail
+            let characterDetailVC = CharacterDetailViewController()
+            characterDetailVC.modalPresentationStyle = .fullScreen
+            characterDetailVC.character = characterList[indexPath.row]
+            characterListVC.present(characterDetailVC, animated: true)
         } else {
             Utils.showAlert(characterListVC, description: "No tienes conexión a internet")
         }
