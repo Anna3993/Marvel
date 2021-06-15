@@ -4,12 +4,12 @@
     "copyright":"© 2021 MARVEL",
     "attributionText":"Data provided by Marvel. © 2021 MARVEL",
     "attributionHTML":"<a href=\"http://marvel.com\">Data provided by Marvel. © 2021 MARVEL</a>",
-    "etag":"5995fb15826bd7d2399bc28f4fc6ed4ef2b86534",
+    "etag":"78beebf5486a6ca2a6b238ab0788947495452aec",
     "data":{
         "offset":0,
         "limit":20,
-        "total":1493,
-        "count":20,
+        "total":1,
+        "count":1,
         "results":[
             {
                 "id":1009351,
@@ -403,9 +403,6 @@
                         "url":"http://marvel.com/comics/characters/1009351/hulk?utm_campaign=apiRef&utm_source=094f916058b8fdbc86001eb904d98f29"
                     }
                 ]
-            },
-            {
-                "modified":"2020-07-21T10:33:36-0400",
             }
         ]
     }
